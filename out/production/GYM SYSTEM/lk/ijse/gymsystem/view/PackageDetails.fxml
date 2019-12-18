@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="685.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.PackageDetailsController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1180.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="59.0" prefWidth="1180.0" AnchorPane.bottomAnchor="626.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="55.0" layoutY="12.0" style="-fx-background-color: black;" text="  PACKAGE  DETAILS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="57.0">
+                     <image>
+                        <Image url="@../assest/Capture.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" layoutX="1009.0" layoutY="10.0" onAction="#btnBackOnAction" prefHeight="44.0" prefWidth="154.0" text="BACK" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="56.0">
+                     <image>
+                        <Image url="@../assest/images.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="67.0" prefHeight="598.0" prefWidth="1152.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="67.0">
+         <children>
+            <Label layoutX="32.0" layoutY="14.0" prefHeight="37.0" prefWidth="122.0" text="Package ID" textFill="WHITE" AnchorPane.bottomAnchor="541.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1016.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="59.0" prefHeight="38.0" prefWidth="122.0" text="Package Name" textFill="WHITE" AnchorPane.bottomAnchor="491.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1016.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tablePackageDetails" fixedCellSize="0.0" layoutX="31.0" layoutY="205.0" opacity="0.6" prefHeight="317.0" prefWidth="1124.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="205.0">
+              <columns>
+                <TableColumn prefWidth="150.0" text="Member ID" />
+                <TableColumn prefWidth="325.0" text="Member Name" />
+                  <TableColumn prefWidth="175.0" text="Contact No" />
+                  <TableColumn prefWidth="145.0" text="Gender" />
+                  <TableColumn prefWidth="165.0" text="Date of Join" />
+                  <TableColumn prefWidth="165.0" text="Date of End" />
+              </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="158.0" prefHeight="38.0" prefWidth="122.0" text="Price" textFill="WHITE" AnchorPane.bottomAnchor="441.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1016.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtPrice" focusColor="WHITE" layoutX="150.0" layoutY="118.0" onAction="#txtPriceOnAction" prefHeight="32.0" prefWidth="402.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="118.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#808080" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtame" focusColor="WHITE" layoutX="150.0" layoutY="68.0" onAction="#txtameOnAction" prefHeight="32.0" prefWidth="402.0" style="-fx-text-fill: white;">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#808080" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="comboPackage" focusColor="WHITE" layoutX="150.0" layoutY="25.0" onAction="#comboPackageOnAction" prefHeight="22.0" prefWidth="402.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#8a8484" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

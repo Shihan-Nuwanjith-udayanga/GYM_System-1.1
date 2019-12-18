@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="685.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.AttendanceController">
+   <children>
+      <ImageView fitHeight="703.0" fitWidth="1195.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="81.0" prefHeight="608.0" prefWidth="1167.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="81.0">
+         <children>
+            <Label layoutX="14.0" layoutY="15.0" prefHeight="37.0" prefWidth="142.0" text="Member ID" textFill="WHITE" AnchorPane.bottomAnchor="556.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1011.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="37.0" prefWidth="142.0" text="Member Name" textFill="WHITE" AnchorPane.bottomAnchor="511.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1011.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="562.0" layoutY="21.0" prefHeight="37.0" prefWidth="142.0" text="Date" textFill="WHITE" AnchorPane.bottomAnchor="556.0" AnchorPane.leftAnchor="562.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="562.0" layoutY="59.0" prefHeight="37.0" prefWidth="142.0" text="Arrival Time" textFill="WHITE" AnchorPane.bottomAnchor="511.0" AnchorPane.leftAnchor="562.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtMemberID" focusColor="WHITE" layoutX="160.0" layoutY="15.0" onAction="#txtMemberIDOnAction" prefHeight="26.0" prefWidth="357.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="567.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="15.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.5571428571428572">
+                     <stops>
+                        <Stop color="#b2a3a3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtMemberName" focusColor="WHITE" layoutX="160.0" layoutY="67.0" onAction="#txtMemberNameOnAction" prefHeight="26.0" prefWidth="357.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="522.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="650.0" AnchorPane.topAnchor="60.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.5571428571428572">
+                     <stops>
+                        <Stop color="#b2a3a3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <Label layoutX="554.0" layoutY="105.0" prefHeight="37.0" prefWidth="134.0" text="Departure Time" textFill="WHITE" AnchorPane.bottomAnchor="466.0" AnchorPane.leftAnchor="562.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="105.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableAttendance" fixedCellSize="0.0" layoutY="241.0" onMouseClicked="#tableAttendanceOnMouseClicked" opacity="0.7" prefHeight="325.0" prefWidth="935.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="241.0">
+              <columns>
+                <TableColumn prefWidth="150.0" text="Member ID" />
+                  <TableColumn prefWidth="250.0" text="Member Name" />
+                  <TableColumn prefWidth="170.0" text="Date" />
+                  <TableColumn prefWidth="181.0" text="Arrival Time" />
+                  <TableColumn prefWidth="181.0" text="Departure Time" />
+              </columns>
+            </TableView>
+            <VBox layoutX="974.0" layoutY="269.0" prefHeight="270.0" prefWidth="152.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="974.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="269.0">
+               <children>
+                  <JFXButton fx:id="btnAdd" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="158.0" style="-fx-background-color: #0277bd;" text=" ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="37.0">
+                           <image>
+                              <Image url="@../assest/download.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUpdate" layoutX="10.0" layoutY="20.0" onAction="#btnUpdateOnAction" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #0097a7;" text="UPDATE" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="34.0">
+                           <image>
+                              <Image url="@../assest/retake.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDelete" layoutX="10.0" layoutY="152.0" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="152.0" style="-fx-background-color: b71c1c;" text="DELETE" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0">
+                           <image>
+                              <Image url="@../assest/010_trash-2-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDetails" layoutX="10.0" layoutY="218.0" onAction="#btnDetailsOnAction" prefHeight="46.0" prefWidth="156.0" style="-fx-background-color: GRAY;" text="DETAILS" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../assest/download.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <JFXTextField fx:id="txtArrivalTime" focusColor="WHITE" labelFloat="true" layoutX="722.0" layoutY="60.0" onAction="#txtArrivalTimeOnAction" prefHeight="16.0" prefWidth="357.0" promptText="00:00" style="-fx-text-fill: white;" AnchorPane.topAnchor="60.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.5571428571428572">
+                     <stops>
+                        <Stop color="#b2a3a3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDepartureTime" focusColor="WHITE" labelFloat="true" layoutX="722.0" layoutY="105.0" prefHeight="22.0" prefWidth="357.0" promptText="00:00" style="-fx-text-fill: white;" AnchorPane.topAnchor="105.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.5571428571428572">
+                     <stops>
+                        <Stop color="#b2a3a3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="lblDate" layoutX="722.0" layoutY="13.0" prefHeight="33.0" prefWidth="357.0" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="645.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="86.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1109.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/icons8_Attendance_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="6.0" prefHeight="58.0" prefWidth="1111.0" style="-fx-background-color: BLACK;" text=" ATTENDANCE" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="btnHome" accessibleRole="BUTTON" layoutX="1111.0" layoutY="21.0" onMouseClicked="#btnHomeOnMouseClicked" prefHeight="43.0" prefWidth="43.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1111.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="21.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../assest/2-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="685.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.InstructorController">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="1220.0" layoutX="90.0" layoutY="171.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="86.0" prefHeight="44.0" prefWidth="148.0" text="Instructor ID" textFill="WHITE" AnchorPane.bottomAnchor="594.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="164.0" prefHeight="44.0" prefWidth="148.0" text="Instructor Name" textFill="WHITE" AnchorPane.bottomAnchor="549.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="193.0" prefHeight="44.0" prefWidth="148.0" text="Address" textFill="WHITE" AnchorPane.bottomAnchor="504.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="261.0" prefHeight="44.0" prefWidth="148.0" text="Contact No" textFill="WHITE" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="215.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="294.0" prefHeight="44.0" prefWidth="148.0" text="E-mail" textFill="WHITE" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="346.0" prefHeight="44.0" prefWidth="148.0" text="Gender" textFill="WHITE" AnchorPane.bottomAnchor="369.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1052.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtInstructorID" focusColor="WHITE" layoutX="165.0" layoutY="89.0" onAction="#txtInstructorIDOnAction" prefHeight="25.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="80.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtInstructorName" focusColor="WHITE" layoutX="165.0" layoutY="126.0" onAction="#txtInstructorNameOnAction" prefHeight="28.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="125.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="165.0" layoutY="176.0" onAction="#txtAddressOnAction" prefHeight="28.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="520.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="170.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtContactNo" focusColor="WHITE" layoutX="165.0" layoutY="223.0" onAction="#txtContactNoOnAction" prefHeight="28.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="475.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="215.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="158.0" layoutY="261.0" onAction="#txtEmailOnAction" prefHeight="28.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="717.0" AnchorPane.topAnchor="261.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <Label layoutX="544.0" layoutY="86.0" prefHeight="44.0" prefWidth="148.0" text="Date Of Birth" textFill="WHITE" AnchorPane.bottomAnchor="588.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="86.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAge" focusColor="WHITE" layoutX="689.0" layoutY="121.0" onAction="#txtAgeOnAction" prefHeight="30.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="567.0" AnchorPane.leftAnchor="689.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="121.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <Label layoutX="544.0" layoutY="131.0" prefHeight="44.0" prefWidth="148.0" text="Age" textFill="WHITE" AnchorPane.bottomAnchor="543.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="131.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="544.0" layoutY="176.0" prefHeight="44.0" prefWidth="148.0" text="Date of Join" textFill="WHITE" AnchorPane.bottomAnchor="498.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="176.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="544.0" layoutY="221.0" prefHeight="44.0" prefWidth="148.0" text="Salery" textFill="WHITE" AnchorPane.bottomAnchor="453.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="221.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="544.0" layoutY="266.0" prefHeight="44.0" prefWidth="148.0" text="Height" textFill="WHITE" AnchorPane.bottomAnchor="408.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="266.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="544.0" layoutY="311.0" prefHeight="44.0" prefWidth="148.0" text="Weight" textFill="WHITE" AnchorPane.bottomAnchor="363.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="311.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSalery" focusColor="WHITE" layoutX="689.0" layoutY="220.0" onAction="#txtSaleryOnAction" prefHeight="30.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="689.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="220.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtHeight" focusColor="WHITE" layoutX="689.0" layoutY="266.0" onAction="#txtHeightOnAction" prefHeight="30.0" prefWidth="339.0" style="-fx-text-fill: white;" AnchorPane.bottomAnchor="422.0" AnchorPane.leftAnchor="689.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="266.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtWeight" focusColor="WHITE" layoutX="689.0" layoutY="311.0" onAction="#txtWeightOnAction" prefHeight="30.0" prefWidth="339.0" style="-fx-text-fill: white;" stylesheets="@../css/BaseStyles.css" AnchorPane.bottomAnchor="377.0" AnchorPane.leftAnchor="689.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="311.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXRadioButton fx:id="btnMaleRadioButton" layoutX="162.0" layoutY="307.0" prefHeight="28.0" prefWidth="92.0" text="Male" textFill="WHITE" AnchorPane.bottomAnchor="383.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="960.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="instructorGenderRadioGroup" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="btnFemaleRadioButton" layoutX="278.0" layoutY="319.0" prefHeight="30.0" prefWidth="98.0" text="Female" textFill="WHITE" toggleGroup="$instructorGenderRadioGroup" AnchorPane.bottomAnchor="383.0" AnchorPane.leftAnchor="278.0" AnchorPane.rightAnchor="838.0" AnchorPane.topAnchor="305.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <AnchorPane prefHeight="73.0" prefWidth="1220.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="645.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="92.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1122.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/icons8_Personal_Trainer_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="96.0" layoutY="12.0" prefHeight="73.0" prefWidth="1102.0" style="-fx-background-color: black;" text="INSTRUCTORS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="btnHome" accessibleRole="BUTTON" layoutX="1118.0" layoutY="8.0" onMouseClicked="#btnHomeOnMouseClicked" prefHeight="44.0" prefWidth="44.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="1118.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="8.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../assest/2-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="1006.0" layoutY="132.0" prefHeight="203.0" prefWidth="154.0" AnchorPane.bottomAnchor="387.0" AnchorPane.leftAnchor="1006.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="132.0">
+         <children>
+            <JFXButton fx:id="btnAdd" onAction="#btnAddOnAction" prefHeight="41.0" prefWidth="156.0" style="-fx-background-color: #0277bd;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="38.0">
+                     <image>
+                        <Image url="@../assest/icons8_Add_User_Male_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" layoutX="10.0" layoutY="49.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: #0097a7;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="36.0">
+                     <image>
+                        <Image url="@../assest/retake.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" layoutX="10.0" layoutY="88.0" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: b71c1c;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="39.0">
+                     <image>
+                        <Image url="@../assest/010_trash-2-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXDatePicker fx:id="dateDateOfJoin" defaultColor="#dbdbdb" layoutX="689.0" layoutY="163.0" onAction="#dateDateOfJoinOnAction" prefHeight="25.0" prefWidth="345.0" styleClass="date-picker" stylesheets="@../css/BaseStyles.css" AnchorPane.rightAnchor="220.0" />
+      <JFXDatePicker fx:id="dateDateOfBirth" defaultColor="#dbdbdb" layoutX="689.0" layoutY="77.0" onAction="#dateDateOfBirthOnAction" prefHeight="32.0" prefWidth="345.0" styleClass="date-picker" stylesheets="@../css/BaseStyles.css" AnchorPane.leftAnchor="680.0" AnchorPane.rightAnchor="220.0" />
+      <TableView fx:id="tableInstructor" layoutX="14.0" layoutY="384.0" onMouseClicked="#tableInstructorOnMouseClicked3" opacity="0.8" prefHeight="278.0" prefWidth="1155.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Instructor ID" />
+          <TableColumn prefWidth="130.0" text="Instructor Name" />
+            <TableColumn prefWidth="125.0" text="Address" />
+            <TableColumn prefWidth="100.0" text="Contact No" />
+            <TableColumn prefWidth="100.0" text="E-mail" />
+            <TableColumn prefWidth="100.0" text="Gender" />
+            <TableColumn prefWidth="90.0" text="Date Of Birth" />
+            <TableColumn prefWidth="75.0" text="Age" />
+            <TableColumn prefWidth="90.0" text="Date of Join" />
+            <TableColumn prefWidth="100.0" text="Salery" />
+            <TableColumn prefWidth="85.0" text="Height" />
+            <TableColumn prefWidth="85.0" text="Weight" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

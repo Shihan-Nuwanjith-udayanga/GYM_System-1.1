@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.AttendanceDetailsController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1180.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="301.0" layoutY="101.0" prefHeight="581.0" prefWidth="578.0">
+         <children>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="33.0" prefHeight="32.0" prefWidth="550.0" style="-fx-background-color: gray;" text="Search Member Attendance" textFill="WHITE" AnchorPane.bottomAnchor="527.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtSearchMemberId" focusColor="WHITE" labelFloat="true" layoutX="84.0" layoutY="80.0" onAction="#txtSearchMemberIdOnAction" prefHeight="32.0" prefWidth="428.0" promptText="Member ID" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="21.0" layoutY="85.0" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="505.0" AnchorPane.topAnchor="85.0">
+               <image>
+                  <Image url="@../assest/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="171.0" prefHeight="32.0" prefWidth="117.0" text="Member ID" textFill="WHITE" AnchorPane.bottomAnchor="381.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="171.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="209.0" prefHeight="39.0" prefWidth="117.0" text="Name" textFill="WHITE" AnchorPane.bottomAnchor="336.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="209.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtMemberID" focusColor="WHITE" layoutX="140.0" layoutY="162.0" prefHeight="32.0" prefWidth="418.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="160.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMemberName" focusColor="WHITE" layoutX="130.0" layoutY="207.0" prefHeight="32.0" prefWidth="418.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="347.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="205.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="tableMemberAttendance" layoutX="14.0" layoutY="312.0" opacity="0.7" prefHeight="223.0" prefWidth="560.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="315.0">
+               <columns>
+                  <TableColumn prefWidth="180.0" text="Date" />
+                  <TableColumn prefWidth="200.0" text="Arrival Time" />
+                  <TableColumn prefWidth="200.0" text="Departure Time" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="88.0" prefWidth="200.0" AnchorPane.bottomAnchor="630.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="78.0" layoutY="19.0" text="  ATTENDANCE   DETAILS" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="78.0">
+                     <image>
+                        <Image url="@../assest/Capture.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnHome" accessibleRole="BUTTON" layoutX="1122.0" layoutY="7.0" onMouseClicked="#btnHomeOnMouseClicked" prefHeight="41.0" prefWidth="44.0" text="Label" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="1122.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../assest/2-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnBack" layoutX="1015.0" layoutY="60.0" onAction="#btnBackOnAction" prefHeight="43.0" prefWidth="144.0" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="53.0">
+               <image>
+                  <Image url="@../assest/images.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

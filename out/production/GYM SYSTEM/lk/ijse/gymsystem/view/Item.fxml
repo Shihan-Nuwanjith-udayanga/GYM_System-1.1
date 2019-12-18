@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="685.0" prefWidth="1180.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.ItemController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="79.0" prefHeight="603.0" prefWidth="1166.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="79.0">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="32.0" prefWidth="112.0" text="Item ID" textFill="WHITE" AnchorPane.bottomAnchor="549.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1040.0" AnchorPane.topAnchor="28.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="73.0" prefHeight="32.0" prefWidth="112.0" text="Item Name" textFill="WHITE" AnchorPane.bottomAnchor="504.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1040.0" AnchorPane.topAnchor="73.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="118.0" prefHeight="32.0" prefWidth="112.0" text="Brand" textFill="WHITE" AnchorPane.bottomAnchor="459.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1040.0" AnchorPane.topAnchor="118.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="509.0" layoutY="19.0" prefHeight="32.0" prefWidth="130.0" text="Description" textFill="WHITE" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="509.0" AnchorPane.rightAnchor="555.0" AnchorPane.topAnchor="19.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtItemID" focusColor="WHITE" layoutX="120.0" layoutY="14.0" onAction="#txtItemIDOnAction" prefHeight="35.0" prefWidth="336.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="690.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtItemName" focusColor="WHITE" layoutX="120.0" layoutY="59.0" onAction="#txtItemNameOnAction" prefHeight="35.0" prefWidth="336.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="690.0" AnchorPane.topAnchor="59.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtBrand" focusColor="WHITE" layoutX="120.0" layoutY="104.0" onAction="#txtBrandOnAction" prefHeight="35.0" prefWidth="336.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="464.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="690.0" AnchorPane.topAnchor="104.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXTextArea fx:id="txtDescription" focusColor="WHITE" layoutX="611.0" layoutY="19.0" prefHeight="212.0" prefWidth="349.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="378.0" AnchorPane.leftAnchor="611.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="19.0">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></JFXTextArea>
+            <Label layoutX="14.0" layoutY="219.0" prefHeight="32.0" prefWidth="112.0" text="Bought Date" textFill="WHITE" AnchorPane.bottomAnchor="358.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1040.0" AnchorPane.topAnchor="219.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtBroughtPrice" focusColor="WHITE" layoutX="149.0" layoutY="154.0" onAction="#txtBroughtPriceOnAction" prefHeight="35.0" prefWidth="336.0" style="-fx-text-fill: white;" unFocusColor="WHITE" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="690.0" AnchorPane.topAnchor="154.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></JFXTextField>
+            <Label layoutX="14.0" layoutY="167.0" prefHeight="32.0" prefWidth="112.0" text="Bought Price" textFill="WHITE" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1040.0" AnchorPane.topAnchor="167.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="986.0" layoutY="17.0" prefHeight="235.0" prefWidth="153.0">
+               <children>
+                  <JFXButton fx:id="btnAdd" alignment="CENTER" layoutX="10.0" layoutY="10.0" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="173.0" style="-fx-background-color: #0277bd;" text=" ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="32.0">
+                           <image>
+                              <Image url="@../assest/download.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUpdate" alignment="CENTER" layoutX="10.0" layoutY="56.0" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="172.0" style="-fx-background-color: #0097a7;" text="UPDATE" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="35.0">
+                           <image>
+                              <Image url="@../assest/retake.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDelete" alignment="CENTER" layoutX="10.0" layoutY="102.0" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: b71c1c;" text="DELETE" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="34.0">
+                           <image>
+                              <Image url="@../assest/010_trash-2-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSearch" alignment="CENTER" layoutX="10.0" layoutY="142.0" onAction="#btnSearchOnAction" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: #455a64;" text="SEARCH" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="34.0">
+                           <image>
+                              <Image url="@../assest/icons8_Search_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <TableView fx:id="tableItem" layoutX="14.0" layoutY="270.0" onMouseClicked="#tableItemOnMouseClicked" opacity="0.8" prefHeight="311.0" prefWidth="1125.0">
+              <columns>
+                <TableColumn prefWidth="110.0" text="Item ID" />
+                <TableColumn prefWidth="250.0" text="Item Name" />
+                  <TableColumn prefWidth="200.0" text="Brand" />
+                  <TableColumn prefWidth="140.0" text="Brought Price" />
+                  <TableColumn prefWidth="140.0" text="Brought Date" />
+                  <TableColumn prefWidth="285.0" text="Description" />
+              </columns>
+            </TableView>
+            <JFXDatePicker fx:id="dateBoughtDate" defaultColor="#dbdbdb" layoutX="140.0" layoutY="200.0" onAction="#dateBoughtDateOnAction" prefHeight="25.0" prefWidth="336.0" styleClass="date-picker" stylesheets="@../css/BaseStyles.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="7.0" prefHeight="74.0" prefWidth="1180.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="622.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="202.0" layoutY="27.0" prefHeight="50.0" prefWidth="978.0" style="-fx-background-color: black;" text="  ITEM  " textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="72.0" fitWidth="83.0">
+                     <image>
+                        <Image url="@../assest/icons8_Dumbbell_104px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="btnHome" accessibleRole="BUTTON" layoutX="1112.0" onMouseClicked="#btnHomeOnMouseClicked" prefHeight="46.0" prefWidth="44.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="1112.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../assest/2-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.HomeController">
+   <children>
+      <ImageView fitHeight="692.0" fitWidth="1180.0" layoutX="69.0" layoutY="339.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="632.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="83.0" layoutY="18.0" text="DASHBOARD" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="91.0">
+                     <image>
+                        <Image url="@../assest/icons8_Combo_Chart_104px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="51.0" layoutY="98.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="820.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label layoutY="6.0" text="Active Instructors" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="6.0" text="04" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="54.0" layoutY="6.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/icons8_Personal_Trainer_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="441.0" layoutY="95.0" prefHeight="131.0" prefWidth="280.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label layoutY="6.0" prefHeight="200.0" prefWidth="280.0" text="Active Members" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="54.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/aa.png.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="202.0" layoutY="6.0" text="08" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="799.0" layoutY="100.0" prefHeight="131.0" prefWidth="280.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="820.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label layoutY="6.0" prefHeight="200.0" prefWidth="280.0" text="Active Packages" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="6.0" text="03" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="14.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="226.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/Capture.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

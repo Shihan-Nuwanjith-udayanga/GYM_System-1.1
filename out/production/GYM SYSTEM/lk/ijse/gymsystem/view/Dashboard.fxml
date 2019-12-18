@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gymsystem.controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="ShowPane" layoutX="185.0" layoutY="83.0" prefHeight="685.0" prefWidth="1180.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <ImageView fitHeight="693.0" fitWidth="1206.0" layoutX="-3.0" layoutY="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assest/dumbbell-1966247_960_720.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="6.0" prefHeight="61.0" prefWidth="1178.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="632.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="61.0" fitWidth="76.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1102.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../assest/icons8_Combo_Chart_104px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="81.0" layoutY="-5.0" prefHeight="58.0" prefWidth="1072.0" style="-fx-background-color: black;" text="DASHBOARD" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="26.0" layoutY="93.0" prefHeight="103.0" prefWidth="278.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="820.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" prefHeight="123.0" prefWidth="278.0" text="Active Instructors" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="49.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../assest/icons8_Personal_Trainer_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblActiveInstructors" layoutX="202.0" layoutY="20.0" prefHeight="123.0" prefWidth="76.0" text="04" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="450.0" layoutY="100.0" prefHeight="103.0" prefWidth="278.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="248.0" text="Active Members" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="49.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../assest/aa.png.png" />
+                  </image>
+                  </ImageView>
+                  <Label fx:id="lblActiveMembers" layoutX="218.0" layoutY="12.0" prefHeight="123.0" prefWidth="76.0" text="08" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="820.0" layoutY="100.0" prefHeight="103.0" prefWidth="278.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="820.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="25.0" prefHeight="58.0" prefWidth="248.0" text="Active Packages" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../assest/Capture.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblActivePackages" layoutX="195.0" layoutY="9.0" prefHeight="123.0" prefWidth="76.0" text="03" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <VBox layoutY="140.0" prefHeight="628.0" prefWidth="187.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1207.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <JFXButton fx:id="btnInstructors" layoutX="10.0" layoutY="10.0" onAction="#btnInstructorsOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Instructors" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Personal_Trainer_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnRegistation" layoutX="10.0" layoutY="60.0" onAction="#btnRegistationOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Registation" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="46.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Add_User_Male_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnPackages" layoutX="10.0" layoutY="110.0" onAction="#btnPackagesOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="  Packages" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../assest/icons8_Add_Tag_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnAttendance" layoutX="10.0" layoutY="160.0" onAction="#btnAttendanceOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Attendance" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="49.0" fitWidth="42.0">
+                     <image>
+                        <Image url="@../assest/icons8_To_Do_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnPayments" layoutX="10.0" layoutY="210.0" onAction="#btnPaymentsOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Payments" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="49.0" fitWidth="43.0">
+                     <image>
+                        <Image url="@../assest/icons8_Cash_in_Hand_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnSchedules" layoutX="10.0" layoutY="260.0" onAction="#btnSchedulesOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Schedules" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0">
+                     <image>
+                        <Image url="@../assest/icons8_Schedule_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnItems" layoutX="10.0" layoutY="310.0" onAction="#btnItemsOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="    Items" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../assest/icons8_Dumbbell_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnProducts" layoutX="10.0" layoutY="360.0" onAction="#btnProductsOnAction" prefHeight="68.0" prefWidth="185.0" style="-fx-background-color: black;" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Plastic_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin></JFXButton>
+            <JFXButton fx:id="btnLogOut" layoutX="10.0" layoutY="500.0" onAction="#btnLogOutOnAction" prefHeight="65.0" prefWidth="185.0" style="-fx-background-color: black;" text="LOG OUT" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Shutdown_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="188.0" layoutY="12.0" prefHeight="58.0" prefWidth="1178.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="690.0" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <!--<Label fx:id="btnClose" accessibleRole="BUTTON" layoutX="1128.0" prefHeight="48.0" prefWidth="49.0" style="-fx-background-color: black;">-->
+               <!--<graphic>-->
+                  <!--<ImageView fx:id="btnClose" accessibleRole="BUTTON" fitHeight="40.0" fitWidth="49.0" nodeOrientation="INHERIT" onMouseClicked="#btnMinimizeOnMouseClicked">-->
+                     <!--<image>-->
+                        <!--<Image url="@../assest/Apps-Dialog-Close-icon.png" />-->
+                     <!--</image>-->
+                  <!--</ImageView>-->
+               <!--</graphic>-->
+            <!--</Label>-->
+            <Label accessibleRole="BUTTON" layoutX="1064.0" onMouseClicked="#btnMinimizeOnMouseClicked" prefHeight="48.0" prefWidth="39.0" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fx:id="btnMinimize" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Minimize_Window_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label accessibleRole="BUTTON" layoutX="1120.0" onMouseClicked="#btnCloseOnMouseClicked" prefHeight="48.0" prefWidth="49.0" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fx:id="btnClose" accessibleRole="BUTTON" fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../assest/icons8_Close_Window_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblDate" layoutX="801.0" layoutY="19.0" prefHeight="40.0" prefWidth="223.0" style="-fx-background-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="39.0">
+                     <image>
+                        <Image url="@../assest/icons8_Calendar_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="lblTime" layoutX="554.0" layoutY="19.0" prefHeight="40.0" prefWidth="223.0" style="-fx-background-color: black;" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="42.0">
+                     <image>
+                        <Image url="@../assest/icons8_Clock_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="134.0" fitWidth="145.0" layoutX="6.0" layoutY="-1.0">
+         <image>
+            <Image url="@../assest/Screenshot_2019-07-27-21-00-33.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
